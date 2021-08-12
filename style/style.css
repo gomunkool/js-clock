@@ -88,13 +88,13 @@ body {
   color: white;
   font-size: 36px;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 0 30px 50px;
 }
 .date {
   color: white;
   font-size: 30px;
   text-align: center;
-  margin-top: 30px;
+  margin: 310px 0 0 50px;
 }
 .clock {
   background-color: rgba(255, 255, 255, 0.3);
@@ -106,4 +106,31 @@ body {
 .display {
   max-width: 250px;
   max-height: 250px;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  right: 50px;
+}
+
+.hour,
+.ho {
+  width: 160px;
+  height: 160px;
+  border: solid red 2px;
+}
+
+.minute,
+.min {
+  width: 190px;
+  height: 190px;
+  border: solid green 2px;
+}
+.second,
+.sec {
+  width: 210px;
+  height: 210px;
+  border: solid yellow;
 }
