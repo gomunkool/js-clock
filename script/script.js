@@ -1,4 +1,5 @@
 const deg = 6;
+const bottonMode = document.getElementById("topic__botton");
 //MOSCOW
 const hoMoscow = document.getElementById("ho__Moscow");
 const minMoscow = document.getElementById("min__Moscow");
@@ -134,3 +135,16 @@ setInterval(() => {
   mounthSidney.innerHTML = `${dateUTC} ${mounth[mounthUTC]}`;
   reternDay();
 });
+
+if (!localStorage.theme) localStorage.theme = "dark";
+document.body.className = localStorage.theme;
+bottonMode.innerText = document.body.classList.contains("light")
+  ? "Black mode"
+  : "Light mode";
+bottonMode.onclick = () => {
+  document.body.classList.toggle("light");
+  bottonMode.innerText = document.body.classList.contains("light")
+    ? "Black mode"
+    : "Light mode";
+  localStorage.theme = document.body.classList || "dark";
+};
