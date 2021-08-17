@@ -91,20 +91,28 @@ body {
   color: white;
   font-size: 30px;
 }
-.notise {
-  display: flex;
+.count__notise {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
   justify-content: center;
+}
+.notise {
+  position: absolute;
   color: red;
   font-size: 26px;
   margin: 0 0 15px 0;
 }
+
 .taimer {
   display: flex;
   justify-content: center;
   color: rgb(32, 28, 28);
   font-size: 30px;
-  margin: 0 0 60px 0;
+  margin: 50px 0 60px 0;
 }
+
 .count__ruls {
   width: 250px;
   margin: 0 auto;
