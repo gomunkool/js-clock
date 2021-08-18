@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* relax */
+body {
+  background: url(../img/relaxFon.jpg) 0 0/100% auto no-repeat;
+  font-family: "Ubuntu", sans-serif;
+  padding: 150px 0 50px 0;
+}
+
+.countener {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.indication {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 60px 0;
+  color: white;
+  font-size: 30px;
+}
+.count__notise {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+}
+.notise {
+  position: absolute;
+  color: red;
+  font-size: 26px;
+  margin: 0 0 15px 0;
+}
+
+.taimer {
+  display: flex;
+  justify-content: center;
+  color: rgb(32, 28, 28);
+  font-size: 30px;
+  margin: 50px 0 60px 0;
+}
+
+.count__ruls {
+  width: 250px;
+  margin: 0 auto;
+}
+.ruls {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(104, 110, 110);
+  opacity: 0.7;
+}
+.button__text {
+  display: flex;
+  justify-content: center;
+  margin: 230px 0 0 0;
+}
+.comBack {
+  width: 150px;
+  height: 35px;
+  left: 120px;
+  top: 40px;
+  border: solid 3px white;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+.comBack:hover {
+  color: aquamarine;
+  border: aquamarine solid 3px;
+}

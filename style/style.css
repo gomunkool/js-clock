@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* clock */
+body {
+  background: url(../img/black2.jpg) 0 0/100% auto no-repeat;
+}
+body.light {
+  background: url(../img/light.jpg) 0 0/100% auto no-repeat;
+}
+.countener {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.topic__botton {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(6, 1, 22);
+  border: white solid 3px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+}
+body.light .topic__botton {
+  background-color: rgb(185, 203, 218);
+  border: black solid 3px;
+  color: black;
+}
+body.light .topic__botton:hover {
+  color: white;
+  background-color: rgb(33, 20, 75);
+  border: white solid 3px;
+}
+.topic__botton:hover {
+  color: rgb(6, 1, 22);
+  background-color: white;
+  border: rgb(6, 1, 22) solid 3px;
+}
+.oll__clock {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.sity {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+body.light .sity {
+  color: black;
+}
+
+.date {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+body.light .date {
+  color: black;
+}
+.clock {
+  background: url(../img/clock.png);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid white 4px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.light .clock {
+  border: none;
+}
+
+.display {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+}
+.hour,
+.ho {
+  width: 145px;
+  height: 145px;
+}
+
+.minute,
+.min {
+  width: 170px;
+  height: 170px;
+}
+.second,
+.sec {
+  width: 190px;
+  height: 190px;
+}
+
+.ho,
+.min,
+.sec {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+.ho::before {
+  content: "";
+  background-color: black;
+  width: 7px;
+  height: 55px;
+  position: absolute;
+  border-radius: 80px;
+  margin: 15px 0 0 0;
+}
+.min::before {
+  content: "";
+  background-color: black;
+  width: 5px;
+  height: 80px;
+  position: absolute;
+  border-radius: 80px;
+  margin: 5px 0 0 0;
+}
+.sec::before {
+  content: "";
+  background-color: white;
+  width: 2.5px;
+  height: 90px;
+  position: absolute;
+  margin: 10px 0 0 0;
+  border-radius: 80px;
+}
+.date {
+  width: 250px;
+}
+.date div {
+  padding: 10px 0 0 0;
+}
+.count__relax {
+  display: flex;
+  justify-content: center;
+}
+.relax__button {
+  width: 220px;
+  height: 50px;
+  border: solid 5px rgb(124, 124, 153);
+  border-radius: 50px;
+  background: rgb(73, 27, 82);
+  font-size: 24px;
+}
+
+.relax__button:hover {
+  border: white solid 3px;
+  background-color: rgb(185, 203, 218);
+}
+.relax {
+  color: white;
+}
+body.light .relax__button {
+  background-color: rgb(185, 203, 218);
+  border: rgb(39, 9, 48) solid 3px;
+}
+body.light .relax__button:hover {
+  background: rgb(131, 223, 213);
+}
